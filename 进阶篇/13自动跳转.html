@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autojump</title>
+</head>
+<body>
+<p>操作成功</p>
+<p><span id="number">5</span>秒后回到主页<a href="go">返回</a> </p>
+
+<script type="text/javascript">
+    var num = 5;
+    function startCount() {
+        num--;
+        document.getElementById('number').innerHTML = num;
+        if (num==1){
+            window.location.href="http://www.baidu.com";
+        }
+    }
+    setInterval(startCount,1000);
+    function goBack() {
+        window.history.go(-1);
+    }
+</script>
+</body>
+</html>

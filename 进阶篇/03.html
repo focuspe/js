@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onmouse</title>
+    <script type="text/javascript">
+        function onmouse() {
+            alert('leave');
+        }
+        function onfo() {
+            alert('请选择职业');
+        }
+        function onb(str) {
+            alert('请输入密码');
+        }
+        function ons() {
+            alert('你已选中文字');
+        }
+        function onch() {
+            alert('你改变了文本框的内容');
+        }
+        function onl() {
+            alert('页面加载中');
+        }
+        window.onunload = onunload_message;
+        function onunload_message() {
+            alert('确定离开该网页么？');
+        }
+    </script>
+</head>
+<body onload="onl()">
+<a href="http://www.baidu.com" onmouseout="onmouse()">onmouseout属性</a>
+<a href="http://www.baidu.com" onmouseover="onmouse()">onmouseover属性</a>
+<form>
+    <select name="career" onfocus="onfo()">
+        <option>学生</option>
+        <option>老师</option>
+        <option>工程师</option>
+    </select>
+</form>
+<form>
+    用户：<input type="text" name="username">
+    密码：<input type="password" name="psw">
+</form>
+<form>
+    <textarea name="summary" cols="60" rows="5" onselect="ons()">
+        请填写个人简介onselect属性
+    </textarea>
+</form>
+<form>
+    <textarea name="summary" cols="60" rows="5" onchange="onch()">
+        请填写个人简介onchange属性
+    </textarea>
+</form>
+</body>
+</html>

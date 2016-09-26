@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>className属性</title>
+    <style>
+        .one{
+            color: red;
+            background-color: #ccc;
+            width: 200px;
+        }
+        .two{
+            color:blue;
+            background-color: #9FC;
+            width: 500px;
+        }
+
+    </style>
+</head>
+<body>
+<p id="p1">Javascript使网页显示动态效果并实现与用户交互功能</p>
+<input type="button" value="添加样式" onclick="addStyle()">
+<p class="one" id="p2">Javascript使网页显示动态效果并实现与用户交互功能</p>
+<input type="button" value="更改外观" onclick="changeStyle()">
+
+<script type="text/javascript">
+    function addStyle() {
+//        myp.style.color = 'red';
+//        myp.style.backgroundColor = '#ccc';
+//        myp.style.width = '200px'
+        document.getElementById('p1').className = "one";
+    }
+        function changeStyle() {
+            document.getElementById('p2').className = 'two';
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>confirm</title>
+</head>
+<script type="text/javascript">
+    function confi() {
+        var mess = confirm("你是女生吗？");
+        if (mess == true){
+            document.write('lady');
+        }
+        else {
+            document.write('man');
+        }
+    }
+</script>
+<body>
+<input type="button" value="点击我，查看确认对话框" onclick="confi()" />
+</body>
+</html>

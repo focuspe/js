@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+    <script type="text/javascript">
+        var mydate = new Date();
+        var weekday = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+        var mynum = mydate.getDay();
+        document.write('mydate:'+mydate+'<br>');
+        document.write('mydate.getDate():'+mydate.getDate()+'<br>');
+        document.write(mydate.getFullYear()+'<br>');
+        document.write(mydate.getYear()+'<br>');
+        document.write(mydate.getDay()+'<br>');
+        document.write('今天是'+weekday[mynum]+'<br>');
+        mydate.setFullYear(2011);
+        document.write(mydate);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

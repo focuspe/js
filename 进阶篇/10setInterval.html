@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>setInterval</title>
+    <script type="text/javascript">
+        function clock() {
+            var time = new Date();
+            var ft = time.getHours()+":"+time.getMinutes()+":"+time.getSeconds();
+//            document.write(ft);
+            document.getElementById('clock').value=ft;
+        }
+        var i =setInterval(clock,1000);
+        function restart() {
+            var i =setInterval(clock,1000);
+        }
+        function stop() {
+            clearInterval(i);
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="text" id="clock" size="50">
+    <input type="button" value="stop" onclick="stop()">
+    <input type="button" value="restart" onclick="restart()">
+</form>
+</body>
+</html>

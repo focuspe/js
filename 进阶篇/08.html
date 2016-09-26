@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sort</title>
+    <script type="text/javascript">
+        function sortNum(a,b) {
+            return a-b;
+            //升序
+        }
+
+
+
+        var arr1 = new Array('hello','john','love','js');
+        var arr2 = new Array("80","16","50","6","100","1");
+        document.write(arr1.sort()+'<br>');
+        document.write(arr2.sort()+'<br>');
+        document.write(arr2.sort(sortNum)+'<br>');
+
+        var myweek=new Array('星期日','星期一','星期二','星期三','星期四','星期五','星期六');
+
+        document.write(new Date().getFullYear()+'年'+(new Date().getMonth()+1)+'月'
+        +(new Date().getDate())+'日'+myweek[new Date().getDay()]);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

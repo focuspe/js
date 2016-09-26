@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+<h2 id="con">I love JS</h2>
+<p>JS使网页显示动态效果并实现与用户的交互功能。</p>
+<input type="text" name="tt" value="1">
+<input type="text" name="tt" value="2">
+<input type="button" value="看看有几项" onclick="getleng()">
+<script type="text/javascript">
+    var con=document.getElementById('con');
+    con.style.color='red';
+    con.style.backgroundColor='#CCC';
+
+    function getleng() {
+        var len = document.getElementsByName('tt')
+        alert(len.length);
+    }
+</script>
+</body>
+</html>

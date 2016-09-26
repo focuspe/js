@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>indexOf</title>
+    <script type="text/javascript">
+        var mystr = "Hello world!";
+        var mystr2 = "86-010-123456";
+
+        document.write(mystr.indexOf('o')+'<br>');//mystr.indexOf()检索o第一次出现的位置
+        document.write(mystr.indexOf('o',mystr.indexOf('o')+1)+'<br>');//检索o第二次出现的位置
+        document.write(mystr2.split('-')+'<br>');//mystr.split()字符串分割成数组
+        document.write(mystr2.split('')+'<br>');
+        document.write(mystr2.split('',2)+'<br>');
+        document.write(mystr.substring(mystr.indexOf('w'))+'<br>');//mystr.substring()提取字符串
+        document.write(mystr.substring(mystr.indexOf('H'),mystr.indexOf('w'))+'<br>');
+        document.write(mystr.substr(0,9)+'<br>');//mystr.substr()提取指定数目的字符串，从0开始的9个字符
+        document.write(Math.abs(-0.8)+'<br>');//
+        document.write(Math.ceil(0.8)+'<br>');//向上取整
+        document.write(Math.floor(0.8)+'<br>');//向下取整
+        document.write(Math.round(0.5)+'<br>');//四舍五入
+        document.write(Math.round(-0.5)+'<br>');//四舍五入
+        document.write(Math.round(-0.52)+'<br>');//四舍五入
+        document.write(Math.random()+'<br>');//介于0到1的随机数
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

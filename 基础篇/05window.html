@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window</title>
+    <script type="text/javascript">
+        function wind() {
+            var mywin = window.open('http://www.baidu.com');
+            setTimeout('mywin.close()',5000);
+        }
+    </script>
+</head>
+<body>
+<input type="button" id="count" value="点击我，打开新窗口" onclick="wind()">
+</body>
+</html>
